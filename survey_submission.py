@@ -4,6 +4,8 @@ from datetime import datetime, timezone
 import os
 from azure.storage.blob import BlobServiceClient
 import json
+from dotenv import load_dotenv
+load_dotenv()
 
 # Use an environment variable for the connection string
 connect_str = os.environ.get('AZURE_STORAGE_CONNECTION_STRING')
